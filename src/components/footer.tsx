@@ -9,8 +9,12 @@ export default function Footer() {
       <p className="text-xs">
         <span className="font-semibold">About this website:</span> built with
         React & Next.js (App Router & Server Actions), TypeScript, Tailwind CSS,
-        Framer Motion, React Email & Resend, Fleek hosting. You can visit it at 
-https://max.on-fleek.app or https://maxmurakami.eth.limo/.
+        Framer Motion, React Email & Resend, Fleek hosting.
+      </p>
+      <p className="text-xs text-center">
+        You can visit it at
+        <a href="https://max.on-fleek.app" className="text-blue-500"> https://max.on-fleek.app </a> or
+        <a href="https://maxmurakami.eth.limo" className="text-blue-500"> https://maxmurakami.eth.limo</a>.
       </p>
     </footer>
   );

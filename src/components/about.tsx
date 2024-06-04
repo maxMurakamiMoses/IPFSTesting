@@ -19,11 +19,17 @@ export default function About() {
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
-        I&apos;m an undergraduate student at Duke studying Philosophy and Computer Science. I find philosophy compelling because it trains me to think from a structured, first-principles perspective, which is becoming increasingly useful in comprehending our intricate and opinionated world. Delving into philosophical inquiries encourages me to question assumptions, explore fundamental principles, and develop coherent frameworks for understanding reality. Computer science appeals to me because it offers the opportunity to create products that meet people&apos;s needs. I am particularly interested in blockchain technology as I&apos;m excited by its potential to restructure various industries and combat centralized systems.
+        I&apos;m an undergraduate student at Duke studying Philosophy and Computer Science. 
+        I find philosophy compelling because it trains me to think from a structured, 
+        first-principles perspective, which is becoming increasingly useful in navigating 
+        our intricate and opinionated world. Computer science appeals to me because it offers 
+        the opportunity to create products that meet people&apos;s needs. I am particularly 
+        interested in blockchain technology as I&apos;m excited by its potential to 
+        restructure various industries and combat centralized systems.
       </p>
 
       <p>
-        When I’m not coding, I enjoy walking, running, and sleeping.
+        When I’m not coding, I enjoy playing basketball, surfing, and late-night runs.
       </p>
     </motion.section>
   );
