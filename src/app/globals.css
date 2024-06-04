@@ -13,3 +13,10 @@ html.dark {
 .borderBlack {
   @apply border border-black/10;
 }
+
+@media (min-width: 1250px) {
+  .custom\:grid-cols-2 {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
