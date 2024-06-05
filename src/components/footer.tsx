@@ -13,7 +13,7 @@ export default function Footer() {
       </p>
       <p className="text-xs text-center">
         You can visit it at
-        <a href="https://max.on-fleek.app" className="text-blue-500"> https://max.on-fleek.app </a> or
+        <a href="https://max.on-fleek.app" className="text-blue-500"> https://max.on-fleek.app </a> or on the IPFS at 
         <a href="https://maxmurakami.eth.limo" className="text-blue-500"> https://maxmurakami.eth.limo</a>.
       </p>
     </footer>
