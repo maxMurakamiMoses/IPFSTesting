@@ -11,6 +11,7 @@
   "dependencies": {
     "@react-email/components": "0.0.19",
     "@react-email/tailwind": "^0.0.18",
+    "@tabler/icons-react": "^3.5.0",
     "@types/node": "20.1.4",
     "@types/react": "18.2.6",
     "@types/react-dom": "18.2.4",

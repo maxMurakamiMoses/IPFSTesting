@@ -90,7 +90,7 @@ export default function Skills() {
             variants={fadeInAnimationVariants}
             initial="initial"
             whileInView="animate"
-            whileHover={{ scale: 1.1 }} // Add this line to make it bigger on hover
+            whileHover={{ scale: 1.075 }}
             viewport={{
               once: true,
             }}

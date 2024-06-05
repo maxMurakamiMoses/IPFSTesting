@@ -118,3 +118,4 @@ export const skillsData = [
   "Zustand",
   "Clerk"
 ] as const;
+
