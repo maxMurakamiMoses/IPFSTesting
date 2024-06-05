@@ -2,9 +2,10 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-// import corpcommentImg from "@/public/corpcomment.png";
-// import rmtdevImg from "@/public/rmtdev.png";
-// import wordanalyticsImg from "@/public/wordanalytics.png";
+import { MdOutlineComputer } from "react-icons/md";
+import { FaChalkboardTeacher } from "react-icons/fa";
+import { MdSportsMartialArts } from "react-icons/md";
+import { MdOutlineCurrencyBitcoin } from "react-icons/md";
 
 export const links = [
   {
@@ -35,28 +36,36 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "Software Engineer Intern, Zentific investment Management",
+    location: "Tokyo, JP",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2019",
+      "Automated the regulatory compliance verification process by using LLaMa, web-scraping (Scapy/Selenium), and the OpenFIGI API to reduce regulatory compliance checking time by 60%, significantly streamlining our ability to maintain regulatory adherence.",
+    icon: React.createElement(MdOutlineComputer),
+    date: "June 2023 - July 2023",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
+    title: "Software Engineer Intern, Lava",
+    location: "Remote",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+      "Integrated infura’s and Etherscan’s APIs to systemically track wBTC transactions, enabling the extraction of detailed insights into user behavior, including wallet composition, trading patterns, and on-chain interaction with wBTC. Also, conducted on-chain analysis on Ethereum to track token transfers and access network activity for strategic insights.",
+    icon: React.createElement(MdOutlineCurrencyBitcoin),
+    date: "Sep 2023 - Jan 2024",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    title: "Graduate Course Teaching Assistant",
+    location: "Durham, NC",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
+      "Teaching assistant for a graduate course in Fuqua called Innovation and Cryptoventures (FUQINTRD 697) focusing on Defi and Blockchain applications.",
+    icon: React.createElement(FaChalkboardTeacher),
+    date: "Jan 2024 - Present",
+  },
+  {
+    title: "Software Engineer Intern, Duke Athletic Performace Center",
+    location: "Remote",
+    description:
+      "Created the entire patient managment system, using Clerk for user authentication/managment, Langchain to autogenerate reports, and neontech/prisma/next.js 14 for the backend.",
+    icon: React.createElement(MdSportsMartialArts),
+    date: "May 2024 - Aug 2024",
   },
 ] as const;
 
