@@ -1,3 +1,5 @@
+//components/projects.tsx
+
 import Image from "next/image";
 import { useRef } from "react";
 import { projectsData } from "@/lib/data";
