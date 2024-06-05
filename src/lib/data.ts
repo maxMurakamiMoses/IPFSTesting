@@ -78,20 +78,20 @@ export const projectsData = [
     link: "https://bullcitydao.xyz",
   },
   {
-    title: "Colormotion",
-    description:
-      "Colormotion is a mobile app and chrome extension that highlights youtube captions based on the emotion expressed. Won 1st place overall, out of 200+ people!",
-    tags: ["React naitive", "Node.js", "Javascript", "HTML", "CSS"],
-    imageUrl: "/colormotion.png",
-    link: "https://devpost.com/software/emote-8olims",
-  },
-  {
     title: "Manus-AI",
     description:
       "Manus.AI is an web app that translates ASL into text. Got 3rd place on the wellness track out of 100+ people!",
     tags: ["Python", "Tensorflow", "react", "javascript"],
     imageUrl: "/manus.png",
     link: "https://devpost.com/software/manus-ai",
+  },
+  {
+    title: "Colormotion",
+    description:
+      "Colormotion is a mobile app and chrome extension that highlights youtube captions based on the emotion expressed for autistic individuals. Won 1st place overall, out of 200+ people!",
+    tags: ["React naitive", "Node.js", "Javascript", "HTML", "CSS"],
+    imageUrl: "/colormotion.png",
+    link: "https://devpost.com/software/emote-8olims",
   },
 ] as const;
 
@@ -107,12 +107,9 @@ export const skillsData = [
   "Tailwind",
   "Prisma",
   "MongoDB",
-  "Redux",
-  "GraphQL",
-  "Apollo",
-  "Express",
   "PostgreSQL",
   "Python",
-  "Django",
   "Framer Motion",
+  "Zustand",
+  "Clerk"
 ] as const;
