@@ -20,14 +20,14 @@ const fadeInAnimationVariants = {
   }),
 };
 
-const SparkleGrid = ({ rows = 15, columns = 15 }) => {
+const SparkleGrid = ({ rows = 8, columns = 10 }) => {
   const [visibleSparkles, setVisibleSparkles] = useState<number[]>([]);
 
   useEffect(() => {
     const interval = setInterval(() => {
       const newVisibleSparkles: number[] = [];
       for (let i = 0; i < rows * columns; i++) {
-        if (Math.random() < 0.08) {
+        if (Math.random() < 0.1) {
           newVisibleSparkles.push(i);
         }
       }
