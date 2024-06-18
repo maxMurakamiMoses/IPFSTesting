@@ -16,15 +16,15 @@ const Interests = () => {
       id="interests"
       className="w-full px-4"
     >
-      <div className="text-center">
-        <h1 style={{ color: 'white', fontSize: '30px', fontWeight: 'bold' }}>More about Me</h1>
-        <p>This part of the site is under construction</p>
+      <div className='mb-20'>
+        <SectionHeading>Interests</SectionHeading>
       </div>
-      <div className="flex flex-col md:flex-row justify-between items-center">
-        <div className="hidden md:block md:w-1/2">
+      
+      <div className="flex flex-col md:flex-row justify-between items-center py-0 -mt-60 pl-10 pr-10">
+        <div className="hidden md:block md:w-1/2 py-0">
           <EarthCanvas />
         </div>
-        <div className="w-full md:w-1/2">
+        <div className="w-full md:w-1/2 py-0">
           <Card />
         </div>
       </div>
