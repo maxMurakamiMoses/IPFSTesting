@@ -1,3 +1,4 @@
+// Import necessary components
 "use client";
 
 import Header from "@/components/header";
@@ -5,12 +6,12 @@ import "./globals.css";
 import { Inter } from "next/font/google";
 import ActiveSectionContextProvider from "@/context/active-section-context";
 import Footer from "@/components/footer";
-import ThemeSwitch from "@/components/theme-switch";
 import ThemeContextProvider from "@/context/theme-context";
 import CustomCursor from "@/components/CustomCursor";
 import { Toaster } from "@/components/ui/toaster";
 import { useToast } from "@/components/ui/use-toast";
 import { useEffect, ReactNode } from "react";
+import { Meteors } from "@/components/ui/meteors"; // Import Meteors component
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -47,12 +48,19 @@ const RootLayout = ({ children }: RootLayoutProps) => {
       >
         <ThemeContextProvider>
           <ActiveSectionContextProvider>
-            <Header />
-            <CustomCursor />
-            {children}
-            <Footer />
-            <Toaster />
-            <ThemeSwitch />
+            {/* Meteor effect background */}
+            <div className="fixed inset-0 z-0 overflow-hidden pointer-events-none">
+              <Meteors number={50} className="z-0" />
+            </div>
+
+            {/* Main content */}
+            <div className="relative z-10">
+              <Header />
+              <CustomCursor />
+              {children}
+              <Footer />
+              <Toaster />
+            </div>
           </ActiveSectionContextProvider>
         </ThemeContextProvider>
       </body>
