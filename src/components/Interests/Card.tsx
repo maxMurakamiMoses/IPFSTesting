@@ -92,6 +92,32 @@ const Card = ({
   links: string[];
 }) => {
   const [hovered, setHovered] = React.useState(false);
+  const [cardWidth, setCardWidth] = React.useState("470px");
+
+  React.useEffect(() => {
+    const getCardWidth = () => {
+      const width = window.innerWidth;
+      if (width >= 1200) {
+        return "950px"; // large screens
+      } else if (width >= 768) {
+        return "700px"; // medium screens
+      } else {
+        return "470px"; // small screens
+      }
+    };
+
+    const handleResize = () => {
+      setCardWidth(getCardWidth());
+    };
+
+    setCardWidth(getCardWidth()); // Set initial width
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   const desWithLinks = des.split(",").map((item, index, array) => (
     <span key={index}>
       {item.trim()}
@@ -99,32 +125,6 @@ const Card = ({
       {index < array.length - 1 && ", "}
     </span>
   ));
-
-  // Function to determine width based on screen size
-  const getCardWidth = () => {
-    if (window.innerWidth >= 1200) {
-      return "950px"; // large screens
-    } else if (window.innerWidth >= 768) {
-      return "700px"; // medium screens
-    } else if (window.innerWidth >= 640) {
-      return "470px"; // small screens
-    } else {
-      return "470px"; // very small screens
-    }
-  };
-
-  const [cardWidth, setCardWidth] = React.useState(getCardWidth());
-
-  React.useEffect(() => {
-    const handleResize = () => {
-      setCardWidth(getCardWidth());
-    };
-
-    window.addEventListener("resize", handleResize);
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
 
   return (
     <div
