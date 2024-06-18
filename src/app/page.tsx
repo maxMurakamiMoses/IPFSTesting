@@ -4,7 +4,7 @@ import Intro from '@/components/Intro'
 import Projects from '@/components/projects'
 import SectionDivider from '@/components/SectionDivider'
 import Skills from '@/components/skills'
-import Interests from '@/components/Interests'
+import Interests from '@/components/Interests/Interests'
 
 export default function Home() {
   return (

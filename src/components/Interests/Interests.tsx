@@ -1,11 +1,11 @@
 "use client"
 
 import React from 'react'
-import Earth from '@/components/Earth'
+import Earth from '@/components/interests/Earth'
 import { useSectionInView } from "@/lib/hooks";
 import { motion } from "framer-motion";
-import SectionHeading from "./section-heading";
-
+import SectionHeading from "../section-heading";
+import Card from './Card';
 
 const Interests = () => {
     const { ref } = useSectionInView("Interests");
@@ -19,6 +19,7 @@ const Interests = () => {
         <p>This page is currently under construction...</p>
 
         <Earth />
+        <Card />
     </motion.section>
   )
 }
