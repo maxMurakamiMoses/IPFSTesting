@@ -1,8 +1,10 @@
 "use client"
 
 import React, { useEffect, useState } from 'react';
+import { useTheme } from "@/context/theme-context";
 
 const CustomCursor = () => {
+  const { theme } = useTheme();
   const [isHovered, setIsHovered] = useState(false);
   const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
 
@@ -40,6 +42,7 @@ const CustomCursor = () => {
       style={{
         left: `${cursorPosition.x}px`,
         top: `${cursorPosition.y}px`,
+        backgroundColor: theme === 'dark' ? 'white' : 'black',
       }}
     />
   );
