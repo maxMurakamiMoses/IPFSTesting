@@ -125,7 +125,7 @@ export default function Intro() {
   <Button
     variant="link"
     className="bg-gray-300 p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full hover:scale-[1.15] hover:text-gray-950 hover:no-underline transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-    style={{ height: '3.5rem' }} // Adjust the height to match your design
+    style={{ height: '3.5rem' }} 
   >
     IPFS
   </Button>

@@ -29,8 +29,8 @@ export const Meteors = ({
               className
             )}
             style={{
-              top: startFromLeft ? Math.floor(Math.random() * 95) + "%" : getRandomNegativePercentage(),
-              left: startFromLeft ? getRandomNegativePercentage() : Math.floor(Math.random() * 95) + "%",
+              top: startFromLeft ? Math.floor(Math.random() * 90) + "%" : getRandomNegativePercentage(),
+              left: startFromLeft ? getRandomNegativePercentage() : Math.floor(Math.random() * 90) + "%",
               animationDelay: `${baseDelay + Math.random() * (2.5 - 1) + 1}s`,
               animationDuration: `${Math.floor(Math.random() * (50 - 30) + 30)}s`,
             }}

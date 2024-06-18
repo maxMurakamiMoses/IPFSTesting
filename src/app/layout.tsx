@@ -27,7 +27,7 @@ const RootLayout = ({ children }: RootLayoutProps) => {
         <ThemeContextProvider>
           <ActiveSectionContextProvider>
             <div className="fixed inset-0 z-0 overflow-hidden pointer-events-none">
-              <Meteors number={80} className="z-0" />
+              <Meteors number={90} className="z-0" />
             </div>
 
             <div className="relative z-10">
