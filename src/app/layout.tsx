@@ -36,7 +36,7 @@ const RootLayout = ({ children }: RootLayoutProps) => {
     toast({
       title: "Have a IPFS compatible browser?",
       description: "Check this website out at maxMurakami.eth.limo!",
-      action: <ToastActionLink href="https://maxmurakami.eth.limo/">Go to Site</ToastActionLink>,
+      action: <ToastActionLink href="https://maxmurakami.eth.limo/">Visit</ToastActionLink>,
     });
   }, [toast]);
 
