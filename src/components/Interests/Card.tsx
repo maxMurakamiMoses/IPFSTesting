@@ -92,31 +92,6 @@ const Card = ({
   links: string[];
 }) => {
   const [hovered, setHovered] = React.useState(false);
-  const [cardWidth, setCardWidth] = React.useState("470px");
-
-  React.useEffect(() => {
-    const getCardWidth = () => {
-      const width = window.innerWidth;
-      if (width >= 1200) {
-        return "950px"; // large screens
-      } else if (width >= 768) {
-        return "700px"; // medium screens
-      } else {
-        return "470px"; // small screens
-      }
-    };
-
-    const handleResize = () => {
-      setCardWidth(getCardWidth());
-    };
-
-    setCardWidth(getCardWidth()); // Set initial width
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
 
   const desWithLinks = des.split(",").map((item, index, array) => (
     <span key={index}>
@@ -125,19 +100,18 @@ const Card = ({
       {index < array.length - 1 && ",  "}
     </span>
   ));
-  
 
   return (
     <div
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
       className="border border-black/[0.2] group/canvas-card flex items-center justify-center
-       dark:border-white/[0.2] px-4 py-2 relative h-70 rounded-3xl"
+       dark:border-white/[0.2] px-4 py-2 relative h-70 rounded-3xl w-full"
       style={{
         background: "rgb(4,7,29)",
         backgroundColor:
           "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
-        width: cardWidth,
+        padding: "0 5px",
       }}
     >
       <AnimatePresence>
