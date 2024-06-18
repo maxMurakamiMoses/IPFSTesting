@@ -11,10 +11,10 @@ const Approach = () => {
         <Card
           title="People I Find Interesting"
           icon={<AceternityIcon order="People" />}
-          des="Justin Mares,
-          Paul Graham,
-          Balaji Srinivasan,
-          Bryan Johnson"
+          des=" Justin Mares,
+            Paul Graham,
+            Balaji Srinivasan,
+            Bryan Johnson"
           links={[
             "https://justinmares.com/",
             "https://paulgraham.com/",
@@ -30,10 +30,10 @@ const Approach = () => {
         <Card
           title="Projects I find Exciting"
           icon={<AceternityIcon order="Projects" />}
-          des="Vita.dao,
-          Helium Networks,
-          Lens Protocol,
-          Fleek.xyz"
+          des="  Vita.dao,
+            Helium Networks,
+            Lens Protocol,
+            Fleek.xyz"
           links={[
             "https://vita.dao/",
             "https://www.helium.com/",
@@ -54,10 +54,10 @@ const Approach = () => {
         <Card
           title="Content I love following"
           icon={<AceternityIcon order="Content" />}
-          des="All-in Pod,
-          MFM Pod,
-          Lex Fridman,
-          Fitt Insider"
+          des="  All-in Pod,
+            MFM Pod,
+            Lex Fridman,
+            Fitt Insider"
           links={[
             "https://www.allinpod.com/",
             "https://www.mfmpod.com/",
@@ -122,9 +122,10 @@ const Card = ({
     <span key={index}>
       {item.trim()}
       <LinkIcon url={links[index]} />
-      {index < array.length - 1 && ", "}
+      {index < array.length - 1 && ",  "}
     </span>
   ));
+  
 
   return (
     <div
