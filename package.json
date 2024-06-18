@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@radix-ui/react-hover-card": "^1.0.7",
     "@radix-ui/react-toast": "^1.1.5",
     "@react-email/components": "0.0.19",
     "@react-email/tailwind": "^0.0.18",

@@ -28,17 +28,17 @@ const Approach = () => {
           />
         </Card>
         <Card
-          title="Projects I find Exciting"
+          title="Things I Find Exciting"
           icon={<AceternityIcon order="Projects" />}
           des="  VitaDAO,
             Helium Networks,
             Lens Protocol,
-            Fleek.xyz"
+            Superpower"
           links={[
             "https://www.vitadao.com/",
             "https://www.helium.com/",
             "https://www.lens.xyz/",
-            "https://fleek.xyz/"
+            "https://superpower.com/"
           ]}
         >
           <CanvasRevealEffect
@@ -52,10 +52,10 @@ const Approach = () => {
           />
         </Card>
         <Card
-          title="Content I love following"
+          title="Content I Love Following"
           icon={<AceternityIcon order="Content" />}
-          des="  All-in Pod,
-            MFM Pod,
+          des="  All-in,
+            MFM,
             Lex Fridman,
             Fitt Insider"
           links={[

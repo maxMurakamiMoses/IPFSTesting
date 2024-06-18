@@ -1,4 +1,4 @@
-"use client";
+"use client"
 
 import React from "react";
 import SectionHeading from "./section-heading";
@@ -18,11 +18,11 @@ export default function About() {
       id="about"
     >
       <SectionHeading>About me</SectionHeading>
-      <p className="mb-3">
+      <p className="mb-3" style={{ fontSize: "1.15rem" }}>
         I spent my childhood growing up in Tokyo, and moved to the United States to attend Duke University in the fall of 2022 (I&rsquo;m a US-Japan dual citizen). My passions lie in entrepreneurship in the general tech field, with a focus on blockchain technologies and the health/wellness space. At Duke, I&apos;m a Philosophy & Computer Science double major, and spend my time outside of class serving as a TA, running the Blockchain Club, & playing basketball with the club team.
       </p>
-      <p>
-        You can find out more about me personally in the <a href="#interests" style={{ textDecoration: 'underline' }}>interests section</a>, or professionally by downloading my PDF available above.
+      <p style={{ fontSize: "0.8rem" }}>
+        You can find out more about me personally in the <a href="#interests" style={{ textDecoration: 'underline' }}>interests section</a>, or professionally by downloading my resume.
       </p>
     </motion.section>
   );
