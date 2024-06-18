@@ -48,18 +48,16 @@ const RootLayout = ({ children }: RootLayoutProps) => {
       >
         <ThemeContextProvider>
           <ActiveSectionContextProvider>
-            {/* Meteor effect background */}
             <div className="fixed inset-0 z-0 overflow-hidden pointer-events-none">
-              <Meteors number={50} className="z-0" />
+              <Meteors number={80} className="z-0" />
             </div>
 
-            {/* Main content */}
             <div className="relative z-10">
               <Header />
               <CustomCursor />
               {children}
               <Footer />
-              <Toaster />
+              {/* <Toaster /> */}
             </div>
           </ActiveSectionContextProvider>
         </ThemeContextProvider>

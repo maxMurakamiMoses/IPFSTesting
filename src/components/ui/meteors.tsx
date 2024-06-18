@@ -9,10 +9,17 @@ export const Meteors = ({
   className?: string;
 }) => {
   const meteors = new Array(number || 20).fill(true);
+
+  const getRandomNegativePercentage = () => {
+    const percentages = ["-1%", "-2%", "-3%", "-4"];
+    return percentages[Math.floor(Math.random() * percentages.length)];
+  };
+
   return (
     <div className="absolute inset-0 overflow-hidden">
       {meteors.map((el, idx) => {
         const startFromLeft = Math.random() > 0.5;
+        const baseDelay = idx * 0.2; 
         return (
           <span
             key={"meteor" + idx}
@@ -22,10 +29,10 @@ export const Meteors = ({
               className
             )}
             style={{
-              top: startFromLeft ? Math.floor(Math.random() * 95) + "%" : "-1%",
-              left: startFromLeft ? "-1%" : Math.floor(Math.random() * 95) + "%",
-              animationDelay: Math.random() * (2 - 0.8) + 0.8 + "s",
-              animationDuration: Math.floor(Math.random() * (60 - 20) + 20) + "s",
+              top: startFromLeft ? Math.floor(Math.random() * 95) + "%" : getRandomNegativePercentage(),
+              left: startFromLeft ? getRandomNegativePercentage() : Math.floor(Math.random() * 95) + "%",
+              animationDelay: `${baseDelay + Math.random() * (2 - 0.5) + 0.5}s`,
+              animationDuration: `${Math.floor(Math.random() * (55 - 25) + 25)}s`,
             }}
           ></span>
         );
