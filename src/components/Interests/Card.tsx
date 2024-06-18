@@ -16,10 +16,10 @@ const Approach = () => {
             Balaji Srinivasan,
             Bryan Johnson"
           links={[
-            "https://justinmares.com/",
-            "https://paulgraham.com/",
+            "https://justinmares.substack.com/",
+            "https://www.paulgraham.com/articles.html",
             "https://balajis.com/",
-            "https://bryanjohnson.co/"
+            "https://x.com/bryan_johnson?"
           ]}
         >
           <CanvasRevealEffect
@@ -30,12 +30,12 @@ const Approach = () => {
         <Card
           title="Projects I find Exciting"
           icon={<AceternityIcon order="Projects" />}
-          des="  Vita.dao,
+          des="  VitaDAO,
             Helium Networks,
             Lens Protocol,
             Fleek.xyz"
           links={[
-            "https://vita.dao/",
+            "https://www.vitadao.com/",
             "https://www.helium.com/",
             "https://www.lens.xyz/",
             "https://fleek.xyz/"
@@ -59,10 +59,10 @@ const Approach = () => {
             Lex Fridman,
             Fitt Insider"
           links={[
-            "https://www.allinpod.com/",
+            "https://www.allinpodcast.co/",
             "https://www.mfmpod.com/",
-            "https://lexfridman.com/",
-            "https://www.fittinsider.com/"
+            "https://www.youtube.com/c/lexfridman",
+            "https://insider.fitt.co/podcast/"
           ]}
         >
           <CanvasRevealEffect
