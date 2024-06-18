@@ -6,7 +6,7 @@ import { CanvasRevealEffect } from "@/components/ui/canvas-reveal-effect";
 
 const Approach = () => {
   return (
-    <section className="w-full py-20 px-4">
+    <section className="w-full px-4">
       <div className="my-20 flex flex-col items-center justify-center gap-4 max-w-5xl mx-auto">
         <Card
           title="People I Find Interesting"

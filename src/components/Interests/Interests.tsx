@@ -13,16 +13,16 @@ const Interests = () => {
   return (
     <motion.section
       ref={ref}
-      className="mb-28 sm:mb-0 max-w-[80rem] text-center leading-8 sm:mb-40 scroll-mt-28 mx-auto"
       id="interests"
+      className="w-full py-20 px-4"
     >
-      <SectionHeading>Interests</SectionHeading>
-      <p>This page is currently under construction...</p>
-      <div className="flex flex-col md:flex-row items-center justify-center md:space-x-1 border border-gray-300 p-4 w-full">
-        <div className="relative w-full h-96 md:h-auto md:flex-1"> {/* Adjust the height of the container */}
+      <div className="flex flex-col md:flex-row justify-between items-center">
+        <div className="hidden md:block md:w-1/2">
           <EarthCanvas />
         </div>
-        <Card />
+        <div className="w-full md:w-1/2">
+          <Card />
+        </div>
       </div>
     </motion.section>
   );

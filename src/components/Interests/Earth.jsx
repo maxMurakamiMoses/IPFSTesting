@@ -6,7 +6,7 @@ const Earth = () => {
   const earth = useGLTF("./planet/scene.gltf");
 
   return (
-    <primitive object={earth.scene} scale={2.5} position-y={0} rotation-y={0} />
+    <primitive object={earth.scene} scale={2} position={[0, 0, 0]} rotation-y={0} />
   );
 };
 
@@ -14,25 +14,27 @@ const EarthCanvas = () => {
   return (
     <Canvas
       shadows
-      frameloop='demand'
+      frameloop="demand"
       dpr={[1, 2]}
       gl={{ preserveDrawingBuffer: true }}
       camera={{
         fov: 45,
         near: 0.1,
-        far: 200,
+        far: 500,  // Increase far clipping plane
         position: [-4, 3, 6],
       }}
+      style={{ width: "100%", height: "100vh" }}  // Ensure the canvas is large enough
     >
-        <OrbitControls
-          autoRotate
-          enableZoom={false}
-          maxPolarAngle={Math.PI / 2}
-          minPolarAngle={Math.PI / 2}
-        />
+      <OrbitControls
+        autoRotate
+        enableZoom={false}
+        maxPolarAngle={Math.PI}  // Allow full rotation around the Earth
+        minPolarAngle={0}
+      />
+      <Suspense fallback={null}>
         <Earth />
-
-        <Preload all />
+      </Suspense>
+      <Preload all />
     </Canvas>
   );
 };
