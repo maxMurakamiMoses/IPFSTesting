@@ -208,12 +208,12 @@ const ShaderMaterial = ({
     timeLocation.value = timestamp;
   });
 
-  const getUniforms = () => {
+  const getUniforms = React.useCallback(() => {
     const preparedUniforms: any = {};
-
+  
     for (const uniformName in uniforms) {
       const uniform: any = uniforms[uniformName];
-
+  
       switch (uniform.type) {
         case "uniform1f":
           preparedUniforms[uniformName] = { value: uniform.value, type: "1f" };
@@ -246,14 +246,14 @@ const ShaderMaterial = ({
           break;
       }
     }
-
+  
     preparedUniforms["u_time"] = { value: 0, type: "1f" };
     preparedUniforms["u_resolution"] = {
       value: new THREE.Vector2(size.width * 2, size.height * 2),
     }; // Initialize u_resolution
     return preparedUniforms;
-  };
-
+  }, [uniforms, size.width, size.height]);
+  
   // Shader material
   const material = useMemo(() => {
     const materialObject = new THREE.ShaderMaterial({
@@ -277,10 +277,11 @@ const ShaderMaterial = ({
       blendSrc: THREE.SrcAlphaFactor,
       blendDst: THREE.OneFactor,
     });
-
+  
     return materialObject;
-  }, [size.width, size.height, source]);
-
+  }, [source, getUniforms]);
+  
+  
   return (
     <mesh ref={ref as any}>
       <planeGeometry args={[2, 2]} />

@@ -61,7 +61,7 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hello, I&apos;m Max.</span> I&apos;m a US-Japanese dual citizen, who grew up in Japan but now attends Duke. My passions lie in entrepreneurship in the general tech field, with a focus on blockchain technologies and the health/wellness space.
+        <span className="font-bold">Hello, I&apos;m Max.</span> I&apos;m a US-Japanese dual citizen studying Computer Science and Philosophy at Duke Universty.
       </motion.h1>
 
       <motion.div
