@@ -11,7 +11,7 @@ export const Meteors = ({
   const meteors = new Array(number || 20).fill(true);
 
   const getRandomNegativePercentage = () => {
-    const percentages = ["-1%", "-2%", "-3%", "-4"];
+    const percentages = ["-3%", "-4%", "-5%", "-6%"];
     return percentages[Math.floor(Math.random() * percentages.length)];
   };
 
@@ -31,8 +31,8 @@ export const Meteors = ({
             style={{
               top: startFromLeft ? Math.floor(Math.random() * 95) + "%" : getRandomNegativePercentage(),
               left: startFromLeft ? getRandomNegativePercentage() : Math.floor(Math.random() * 95) + "%",
-              animationDelay: `${baseDelay + Math.random() * (2 - 0.5) + 0.5}s`,
-              animationDuration: `${Math.floor(Math.random() * (55 - 25) + 25)}s`,
+              animationDelay: `${baseDelay + Math.random() * (2.5 - 1) + 1}s`,
+              animationDuration: `${Math.floor(Math.random() * (50 - 30) + 30)}s`,
             }}
           ></span>
         );
