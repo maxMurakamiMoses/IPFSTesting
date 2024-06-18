@@ -10,17 +10,26 @@ import ThemeContextProvider from "@/context/theme-context";
 import CustomCursor from "@/components/CustomCursor";
 import { Toaster } from "@/components/ui/toaster";
 import { useToast } from "@/components/ui/use-toast";
-import { useEffect } from "react";
+import { useEffect, ReactNode } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
-const ToastActionLink = ({ href, children }) => (
+interface ToastActionLinkProps {
+  href: string;
+  children: ReactNode;
+}
+
+const ToastActionLink = ({ href, children }: ToastActionLinkProps) => (
   <a href={href} target="_blank" rel="noopener noreferrer" className="text-blue-500 underline">
     {children}
   </a>
 );
 
-const RootLayout = ({ children }: { children: React.ReactNode }) => {
+interface RootLayoutProps {
+  children: ReactNode;
+}
+
+const RootLayout = ({ children }: RootLayoutProps) => {
   const { toast } = useToast();
 
   useEffect(() => {
