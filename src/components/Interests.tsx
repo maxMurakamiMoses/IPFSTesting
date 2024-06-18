@@ -16,6 +16,7 @@ const Interests = () => {
     id="interests"
     >
         <SectionHeading>interests</SectionHeading>
+        <p>This page is currently under construction...</p>
 
         <Earth />
     </motion.section>
