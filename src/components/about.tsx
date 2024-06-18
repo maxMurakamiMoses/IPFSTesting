@@ -19,17 +19,10 @@ export default function About() {
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
-        I&apos;m an undergraduate student at Duke studying Philosophy and Computer Science. 
-        I find philosophy compelling because it trains me to think from a structured, 
-        first-principles perspective, which is becoming increasingly useful in navigating 
-        our intricate and opinionated world. Computer science appeals to me because it offers 
-        the opportunity to create products that meet people&apos;s needs. I am particularly 
-        interested in blockchain technology as I&apos;m excited by its potential to 
-        restructure various industries and combat centralized systems.
+        I spent my childhood growing up in Tokyo, and moved to the United States to attend Duke University in the fall of 2022 (I&rsquo;m a US-Japan dual citizen). My passions lie in entrepreneurship in the general tech field, with a focus on blockchain technologies and the health/wellness space. At Duke, I&apos;m a Philosophy & Computer Science double major, and spend my time outside of class serving as a TA, running the Blockchain Club, & playing basketball with the club team.
       </p>
-
       <p>
-        When I’m not coding, I enjoy playing basketball, surfing, and late-night runs.
+        You can find out more about me personally in the <a href="#interests" style={{ textDecoration: 'underline' }}>interests section</a>, or professionally by downloading my PDF available above.
       </p>
     </motion.section>
   );

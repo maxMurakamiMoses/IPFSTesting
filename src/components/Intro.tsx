@@ -61,7 +61,7 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hello, I&apos;m Max.</span> I&apos;m a junior studying Computer Science and Philosophy at Duke Universty. I&apos;m a US/Japan dual citizen.
+        <span className="font-bold">Hello, I&apos;m Max.</span> I&apos;m a Junior studying Computer Science and Philosophy at Duke University.
       </motion.h1>
 
       <motion.div
@@ -75,10 +75,6 @@ export default function Intro() {
         <a
           href="mailto:max.murakamimoses24@gmail.com"
           className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
-          // onClick={() => {
-          //   setActiveSection("Contact");
-          //   setTimeOfLastClick(Date.now());
-          // }}
         >
           Contact me here{" "}
           <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
