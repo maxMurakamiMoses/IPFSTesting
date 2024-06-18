@@ -142,7 +142,7 @@ const Card = ({
         </h2>
         <p
           className="text-sm opacity-0 group-hover/canvas-card:opacity-100
-         relative z-10 mt-4 group-hover/canvas-card:text-white text-left
+         relative z-10 mt-3 mb-3 group-hover/canvas-card:text-white text-left
          group-hover/canvas-card:-translate-y-2 transition duration-200"
           style={{ color: "#E4ECFF" }}
         >
