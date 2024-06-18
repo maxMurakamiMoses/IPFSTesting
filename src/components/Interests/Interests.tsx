@@ -1,7 +1,7 @@
 "use client"
 
 import React from 'react'
-import Earth from '@/components/interests/Earth'
+// import Earth from './Earth'
 import { useSectionInView } from "@/lib/hooks";
 import { motion } from "framer-motion";
 import SectionHeading from "../section-heading";
@@ -18,7 +18,7 @@ const Interests = () => {
         <SectionHeading>interests</SectionHeading>
         <p>This page is currently under construction...</p>
 
-        <Earth />
+        {/* <Earth /> */}
         <Card />
     </motion.section>
   )
