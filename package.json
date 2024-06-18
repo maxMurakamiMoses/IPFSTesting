@@ -12,6 +12,8 @@
     "@radix-ui/react-toast": "^1.1.5",
     "@react-email/components": "0.0.19",
     "@react-email/tailwind": "^0.0.18",
+    "@react-three/drei": "^9.107.0",
+    "@react-three/fiber": "^8.16.8",
     "@tabler/icons-react": "^3.5.0",
     "@types/node": "20.1.4",
     "@types/react": "18.2.6",
