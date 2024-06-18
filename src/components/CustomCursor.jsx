@@ -42,7 +42,7 @@ const CustomCursor = () => {
       style={{
         left: `${cursorPosition.x}px`,
         top: `${cursorPosition.y}px`,
-        backgroundColor: theme === 'dark' ? 'white' : 'black',
+        borderColor: theme === 'dark' ? 'white' : '#888',
       }}
     />
   );
