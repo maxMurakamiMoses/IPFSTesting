@@ -19,7 +19,10 @@ export const Meteors = ({
     <div className="absolute inset-0 overflow-hidden">
       {meteors.map((el, idx) => {
         const startFromLeft = Math.random() > 0.5;
-        const baseDelay = idx * 0.25; 
+        const baseDelay = idx * 0.25;
+        const speedFactor = Math.random() * (1.5 - 0.5) + 0.5; // Random speed factor between 0.5 and 1.5
+        const rangeFactor = Math.random() * (1200 - 800) + 800; // Random range factor between 800 and 1200px
+
         return (
           <span
             key={"meteor" + idx}
@@ -29,10 +32,15 @@ export const Meteors = ({
               className
             )}
             style={{
-              top: startFromLeft ? Math.floor(Math.random() * 90) + "%" : getRandomNegativePercentage(),
-              left: startFromLeft ? getRandomNegativePercentage() : Math.floor(Math.random() * 90) + "%",
+              top: startFromLeft
+                ? Math.floor(Math.random() * 90) + "%"
+                : getRandomNegativePercentage(),
+              left: startFromLeft
+                ? getRandomNegativePercentage()
+                : Math.floor(Math.random() * 90) + "%",
               animationDelay: `${baseDelay + Math.random() * (2.5 - 1) + 1}s`,
-              animationDuration: `${Math.floor(Math.random() * (50 - 30) + 30)}s`,
+              animationDuration: `${(Math.random() * (35 - 30) + 30) * speedFactor}s`,
+              transform: `translateX(-${rangeFactor}px)`,
             }}
           ></span>
         );
