@@ -19,7 +19,7 @@ export const Meteors = ({
     <div className="absolute inset-0 overflow-hidden">
       {meteors.map((el, idx) => {
         const startFromLeft = Math.random() > 0.5;
-        const baseDelay = idx * 0.2; 
+        const baseDelay = idx * 0.25; 
         return (
           <span
             key={"meteor" + idx}

@@ -3,9 +3,9 @@ import { VerticalTimelineElement } from "react-vertical-timeline-component";
 
 const Card = ({ item, theme, visible }: { item: any; theme: string; visible: boolean }) => {
   const getContentStyle = (): React.CSSProperties => ({
-    background: theme === "light" ? "#f3f4f6" : "rgba(255, 255, 255, 0.05)",
-    boxShadow: "none",
-    border: "1px solid rgba(0, 0, 0, 0.05)",
+    background: "rgba(255, 255, 255, 0.1)",
+    boxShadow: "0 0 25px rgba(255, 255, 255, 0.5)",
+    border: "0.2px solid white",
     textAlign: "left" as "left",
     padding: "1.3rem 2rem",
   });

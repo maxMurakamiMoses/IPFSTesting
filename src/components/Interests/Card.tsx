@@ -29,7 +29,7 @@ const Approach = () => {
         </Card>
         <Card
           title="Things I Find Exciting"
-          icon={<AceternityIcon order="Projects" />}
+          icon={<AceternityIcon order="Things" />}
           des="  VitaDAO,
             Helium Networks,
             Lens Protocol,
